@@ -1,0 +1,85 @@
+@import "tailwindcss";
+@import "fonts.css";
+
+:root {
+  
+  --base-dark: #1e1e2e;
+  --surface-dark: #51576d;
+  --subtext-dark: #a5adce;
+  --text-dark: #c6d0f5;
+  --accent-dark: #a6d189;
+  --accent-secondary-dark: #ef9f76;
+  --accent-tertiary-dark: #cba6f7;
+
+  /* 
+  for those who wish to burn their
+  retinas with the flame of a thousand
+  suns :)
+  */
+  --base: #eff1f5;
+  --surface: #acb0be;
+  --subtext: #6c6f85;
+  --text: #4c4f69;
+  --accent: #40a02b;
+  --accent-alt: #fe640b;
+
+  --colour-py-dark: #ffde57;
+  --colour-html-dark: #f06529;
+  --colour-rust-dark: #d34516;
+  --colour-twcss-dark: #38bdf8;
+}
+
+body {
+  background-color: var(--base-dark);
+  color: var(--text-dark);
+  font-family: "Google Sans Code", monospace;
+}
+
+/* 
+add some pizzazz
+ */
+.accent {
+  font-style: normal;
+  color: var(--accent-dark);
+}
+.subdued {
+  font-style: normal;
+  color: var(--subtext-dark);
+}
+
+/* 
+programming lang colours
+ */
+.py {
+  color: var(--colour-py-dark);
+}
+.html {
+  color: var(--colour-html-dark);
+}
+.rust {
+  color: var(--colour-rust-dark);
+}
+.tailwind {
+  color: var(--colour-twcss-dark);
+}
+
+h3.subheading {
+  text-transform: uppercase;
+  font-weight: thin;
+  letter-spacing: 4px;
+}
+
+/* 
+list/links
+ */
+
+ol li a {
+  color: var(--accent-tertiary-dark);
+  text-decoration: underline;
+  transition: 300ms ease;
+}
+
+ol li a:hover {
+  color: var(--accent-secondary-dark);
+  transition: 300ms ease;
+}
